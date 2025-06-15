@@ -1,1 +1,5 @@
 rasa==3.6.10
+фшщреез
+requests
+scikit-learn
+matplotlib
