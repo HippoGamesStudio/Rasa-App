@@ -1,5 +1,5 @@
 rasa==3.6.10
-фшщреез
+aiohttp
 requests
 scikit-learn
 matplotlib
