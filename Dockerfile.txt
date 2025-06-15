@@ -1,8 +1,10 @@
-
+FROM python:3.9-slim
 FROM rasa/rasa:3.6.10
 
 COPY . /app
 WORKDIR /app
+
+RUN python -m pip install --upgrade pip setuptools wheel
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
