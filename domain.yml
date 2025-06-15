@@ -1,0 +1,17 @@
+version: "3.1"
+intens:
+  - greet
+  - goodbye
+  - affirm
+
+responses:
+  utter_greet:
+    - text: Привет! Чем могу помочь?
+  utter_goodbye:
+    - text: Пока-пока!
+  utter_affirm:
+    - text: Отлично!
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

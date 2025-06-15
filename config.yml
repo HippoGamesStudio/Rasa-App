@@ -1,0 +1,11 @@
+language: ru
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    retrieval_intent: faq
+    scale_loss: false
+  - name: FallbackClassifier
+    threshold: 0.3
